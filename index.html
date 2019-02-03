@@ -27,13 +27,20 @@
         </ul>
       </nav>
       <div class="user-navigation">
-        <!--Форма поиска-->
-        <a href="#" class="user-navigation-button">Вход</a>
-        <a href="#" class="user-navigation-button">Корзина</a>
+        <div class="user-navigation-search">
+          <a class="user-navigation-button" href="#">Поиск</a>
+          <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+            <label class="visually-hidden" for="search-field">Строка поиска</label>
+            <input type="search" name="search-query" id="search-field" placeholder="Что ищем?">
+            <button class="visually-hidden" type="submit">Найти</button>
+          </form>
+        </div>
+        <a class="user-navigation-button" href="#">Вход</a>
+        <a class="user-navigation-button" href="#">Корзина</a>
       </div>
       <p class="phone-orders">
         <span class="schedule">С 10 до 20, ежедневно</span>
-        <a href="tel:88124502525" class="phone-number">8 812 450-25-25</a>
+        <a class="phone-number" href="tel:88124502525">8 812 450-25-25</a>
       </p>
     </header>
 
