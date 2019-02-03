@@ -191,6 +191,22 @@
           <a class="button" href="#">Форма обратной связи</a>
         </div>
       </section>
+
+      <section class="modal-feedback">
+        <h2 class="modal-title">Мы обязательно вам ответим!</h2>
+        <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
+          <p class="modal-addresser">
+            <label class="visually-hidden" for="modal-name-field">Поле ввода имени</label>
+            <input type="text" name="name" id="modal-name-field" placeholder="Как вас зовут?">
+            <label class="visually-hidden" for="modal-email-field">Поле ввода электронной почты</label>
+            <input type="email" name="email" id="modal-email-field" placeholder="Ваша почта для ответа?" required>
+          </p>
+          <label class="visually-hidden" for="modal-message-field">Поле ввода сообщения</label>
+          <textarea name="message" id="modal-message-field" placeholder="Напишите что-нибудь..." required></textarea>
+          <button class="button" type="submit">Отправить</button>
+        </form>
+        <button class="modal-close" type="button">Закрыть</button>
+      </section>
     </main>
 
     <footer class="main-footer">
