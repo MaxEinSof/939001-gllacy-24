@@ -104,7 +104,105 @@
     <main class="container">
       <h1 class="page-title">Сливочное мороженое</h1>
       
-      <!--Фильтры-->
+      <section class="filters">
+        <h2 class="visually-hidden">Фильтр мороженого</h2>
+        <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
+    
+          <fieldset class="sorting-filter">
+            <label class="filter-title" for="sorting-field">Сортировка:</label>
+            <select name="sorting-value" id="sorting-field">
+              <option value="by-popularity">по популярности</option>
+              <option value="inexpensive-first">сначала недорогие</option>
+              <option value="expensive-first">сначала дорогие</option>
+              <option value="by-fatness">по жирности</option>
+            </select>
+          </fieldset>
+    
+          <fieldset class="price-filter">
+            <legend class="filter-title">Цена:</legend>
+            <div class="price-value">
+              <output name="min-price">100 руб.</output>
+              <span class="value-dash">-</span>
+              <output name="max-price">500 руб.</output>
+            </div>
+            <div class="price-range">
+              <div class="price-range-scale">
+                <div class="price-range-bar"></div>
+              </div>
+              <button class="price-range-toggle toggle-min" type="button"></button>
+              <button class="price-range-toggle toggle-max" type="button"></button>
+            </div>
+          </fieldset>
+    
+          <fieldset class="fatness-filter">
+            <legend class="filter-title">Жирность:</legend>
+            <ul class="fatness-list">
+              <li class="fatness-option">
+                <label>
+                  <input type="radio" name="fat-value" value="0%">
+                  0%
+                </label>
+              </li>
+              <li class="fatness-option">
+                <label>
+                  <input type="radio" name="fat-value" value="до 10%" checked>
+                  до 10%
+                </label>
+              </li>
+              <li class="fatness-option">
+                <label>
+                  <input type="radio" name="fat-value" value="до 30%">
+                  до 30%
+                </label>
+              </li>
+              <li class="fatness-option">
+                <label>
+                  <input type="radio" name="fat-value" value="выше 30%">
+                  выше 30%
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+    
+          <fieldset class="fillers-filter">
+            <legend class="filter-title">Наполнители:</legend>
+            <ul class="fillers-list">
+              <li class="filler-option">
+                <label>
+                  <input type="checkbox" name="chocolate" checked>
+                  шоколадные
+                </label>
+              </li>
+              <li class="filler-option">
+                <label>
+                  <input type="checkbox" name="sugar-powders" checked>
+                  сахарные присыпки
+                </label>
+              </li>
+              <li class="filler-option">
+                <label>
+                  <input type="checkbox" name="fruits">
+                  фрукты
+                </label>
+              </li>
+              <li class="filler-option">
+                <label>
+                  <input type="checkbox" name="syrups">
+                  сиропы
+                </label>
+              </li>
+              <li class="filler-option">
+                <label>
+                  <input type="checkbox" name="jams">
+                  джемы
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <button class="filter-button" type="submit">Применить</button>
+        </form>
+      </section>
 
       <section class="catalog">
         <h2 class="visually-hidden">Каталог cливочного мороженого</h2>
