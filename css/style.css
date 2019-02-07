@@ -152,3 +152,21 @@ a {
 .footer-copyright a:last-child:focus {
   color: #ffbc9e;
 }
+
+.current-page > a {
+  background-color: #d07058;
+}
+
+.breadcrumbs {
+  list-style: none;
+  font-weight: 400;
+}
+
+.breadcrumbs-item a {
+  color: #ffffff;
+}
+
+.breadcrumbs-item a:hover,
+.breadcrumbs-item a:focus {
+  color: #ffbc9e;
+}
