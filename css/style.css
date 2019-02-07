@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #849d8f;
+}
+
+a {
+  text-decoration: none;
+}
+
+.catalog-submenu,
+.search-form,
+.login-form,
+.cart-form,
+.modal-feedback {
+  display: none;
+}
+
+.main-navigation {
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.main-navigation-list {
+  list-style: none;
+}
+
+.main-navigation-item > a {
+  color: #ffffff;
+}
+
+.main-navigation-item > a:hover,
+.main-navigation-item > a:focus {
+  color: #323232;
+  background-color: #f7f6f3;
+}
+
+.phone-number {
+  font-size: 22px;
+  line-height: 24px;
+  color: #ffffff;
+}
