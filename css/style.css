@@ -45,3 +45,21 @@ a {
   line-height: 24px;
   color: #ffffff;
 }
+
+.features {
+  color: #323232;
+  background-color: #ece1c8;
+}
+
+.features-title {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+.features-list {
+  list-style: none;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+}
