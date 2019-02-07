@@ -126,3 +126,29 @@ a {
   font-weight: 400;
 }
 
+.main-footer {
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.footer-social,
+.footer-navigation {
+  list-style: none;
+}
+
+.footer-copyright {
+  font-size: 12px;
+}
+
+.footer-navigation-item a,
+.footer-copyright a:last-child {
+  color: #ffffff;
+}
+
+.footer-navigation-item a:hover,
+.footer-navigation-item a:focus,
+.footer-copyright a:last-child:hover,
+.footer-copyright a:last-child:focus {
+  color: #ffbc9e;
+}
