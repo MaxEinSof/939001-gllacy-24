@@ -121,16 +121,18 @@
           <fieldset class="price-filter">
             <legend class="filter-title">Цена:</legend>
             <div class="price-value">
-              <output name="min-price">100 руб.</output>
+              <output name="min-price-result">100 руб.</output>
+              <input type="hidden" name="min-price" id="min-price-field" value="100">
               <span class="value-dash">-</span>
-              <output name="max-price">500 руб.</output>
+              <output name="max-price-result">500 руб.</output>
+              <input type="hidden" name="max-price" id="max-price-field" value="500">
             </div>
             <div class="price-range">
               <div class="price-range-scale">
                 <div class="price-range-bar"></div>
               </div>
-              <button class="price-range-toggle toggle-min" type="button"></button>
-              <button class="price-range-toggle toggle-max" type="button"></button>
+              <button class="price-range-toggle toggle-min" type="button"><span class="visually-hidden">Ползунок минимальной цены</span></button>
+              <button class="price-range-toggle toggle-max" type="button"><span class="visually-hidden">Ползунок максимальной цены</span></button>
             </div>
           </fieldset>
     
