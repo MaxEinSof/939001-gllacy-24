@@ -20,6 +20,37 @@ a {
   display: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.button {
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+  background-color: #ed5a3d;
+  background-image: linear-gradient(to bottom, #f26843, #e74b36);
+  border: none;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #f07b64;
+  background-image: linear-gradient(to bottom, #f58669, #ec6f5e);
+}
+
+.button:active {
+  background-color: #dc5338;
+  background-image: linear-gradient(to bottom, #d74632, #e1613e);
+}
+
 .main-navigation {
   font-size: 16px;
   line-height: 18px;
@@ -83,3 +114,15 @@ a {
 .article-title a {
   color: #323232;
 }
+
+.mailing {
+  color: #5a5a5a;
+  background-color: #f8f7f4;
+}
+
+.mailing p {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+}
+
