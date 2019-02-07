@@ -137,6 +137,10 @@ a {
   list-style: none;
 }
 
+.for-suppliers {
+  font-weight: 700;
+}
+
 .footer-copyright {
   font-size: 12px;
 }
@@ -169,4 +173,37 @@ a {
 .breadcrumbs-item a:hover,
 .breadcrumbs-item a:focus {
   color: #ffbc9e;
+}
+
+.page-title {
+  font-size: 35px;
+  line-height: 41px;
+}
+
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-item-title {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+}
+
+.catalog-item-title a {
+  color: #ffffff;
+}
+
+.catalog-item-title a:hover,
+.catalog-item-title a:focus {
+  color: #ffbc9e;
+}
+
+.catalog-item-price {
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.catalog-item-price span {
+  font-size: 30px;
 }
