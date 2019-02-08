@@ -35,19 +35,44 @@ a {
   font-size: 18px;
   line-height: 24px;
   color: #ffffff;
-  background-color: #ed5a3d;
-  background-image: linear-gradient(to bottom, #f26843, #e74b36);
+  background-color: #ec5a3d;
+  background-image: linear-gradient(to bottom, #f26844, #e54934);
   border: none;
 }
 
 .button:hover,
 .button:focus {
-  background-color: #f07b64;
+  color: #fefefe;
+  background-color: #f17c64;
   background-image: linear-gradient(to bottom, #f58669, #ec6f5e);
 }
 
 .button:active {
-  background-color: #dc5338;
+  color: #fceeec;
+  background-color: #db5137;
+  background-image: linear-gradient(to bottom, #d74531, #e1613e);
+}
+
+.button-big {
+  font-size: 32px;
+  line-height: 44px;
+  color: #ffffff;
+  text-shadow: 0 2px 5px #bd361e;
+  background-color: #ed5a3d;
+  background-image: linear-gradient(to bottom, #f26843, #e74b36);
+}
+
+.button-big:hover,
+.button-big:focus {
+  text-shadow: 0 2px 5px #bf432d;
+  background-color: #f07b64;
+  background-image: linear-gradient(to bottom, #f58669, #ec6f5e);
+}
+
+.button-big:active {
+  color: #fceeec;
+  text-shadow: 0 2px 5px #b7341d;
+  background-color: #db5338;
   background-image: linear-gradient(to bottom, #d74632, #e1613e);
 }
 
