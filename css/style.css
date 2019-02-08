@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 14px;
   line-height: 16px;
   font-weight: 700;
@@ -36,7 +36,8 @@ a {
   line-height: 24px;
   color: #ffffff;
   background-color: #ec5a3d;
-  background-image: linear-gradient(to bottom, #f26844, #e54934);
+  background-image: linear-gradient(to bottom, #f26843, #e74a35);
+  box-shadow: 0 2px 2px rgba(85, 8, 0, 0.54);
   border: none;
 }
 
@@ -44,36 +45,47 @@ a {
 .button:focus {
   color: #fefefe;
   background-color: #f17c64;
-  background-image: linear-gradient(to bottom, #f58669, #ec6f5e);
+  background-image: 
+    linear-gradient(to bottom, #f26843, #e74a35),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
+  box-shadow: 0 1px 2px #ac1000;
 }
 
 .button:active {
   color: #fceeec;
   background-color: #db5137;
-  background-image: linear-gradient(to bottom, #d74531, #e1613e);
+  background-image: 
+    linear-gradient(to bottom, #e74a35, #f26843),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07));
+  box-shadow: inset 0 2px 2px #942718;
 }
 
 .button-big {
   font-size: 32px;
   line-height: 44px;
   color: #ffffff;
-  text-shadow: 0 2px 5px #bd361e;
+  text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
   background-color: #ed5a3d;
-  background-image: linear-gradient(to bottom, #f26843, #e74b36);
+  background-image: linear-gradient(to bottom, #f26843, #e74a35);
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
 }
 
 .button-big:hover,
 .button-big:focus {
-  text-shadow: 0 2px 5px #bf432d;
   background-color: #f07b64;
-  background-image: linear-gradient(to bottom, #f58669, #ec6f5e);
+  background-image: 
+    linear-gradient(to bottom, #f26843, #e74a35),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
+  box-shadow: 0 2px 2px #ac1000;
 }
 
 .button-big:active {
   color: #fceeec;
-  text-shadow: 0 2px 5px #b7341d;
   background-color: #db5338;
-  background-image: linear-gradient(to bottom, #d74632, #e1613e);
+  background-image: 
+    linear-gradient(to bottom, #e74a35, #f26843),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07));
+  box-shadow: inset 0 2px 2px #942718;
 }
 
 .main-navigation {
@@ -140,6 +152,12 @@ a {
   color: #323232;
 }
 
+.article-title a:hover,
+.article-title a:focus,
+.article-title a:active {
+  color: #e84d37;
+}
+
 .mailing {
   color: #5a5a5a;
   background-color: #f8f7f4;
@@ -170,15 +188,20 @@ a {
   font-size: 12px;
 }
 
-.footer-navigation-item a,
-.footer-copyright a:last-child {
+.footer-navigation-item a {
   color: #ffffff;
+}
+
+.footer-copyright a:last-child {
+  color: #fefefe;
 }
 
 .footer-navigation-item a:hover,
 .footer-navigation-item a:focus,
+.footer-navigation-item a:active,
 .footer-copyright a:last-child:hover,
-.footer-copyright a:last-child:focus {
+.footer-copyright a:last-child:focus,
+.footer-copyright a:last-child:active {
   color: #ffbc9e;
 }
 
