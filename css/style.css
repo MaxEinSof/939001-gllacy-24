@@ -197,6 +197,32 @@ a {
   font-weight: 400;
 }
 
+.contacts-info {
+  color: #323232;
+  background-color: #ffffff;
+}
+
+.contacts-info p {
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.contacts-address {
+  font-size: 18px;
+  line-height: 24px;
+  font-style: normal;
+}
+
+.contacts-phone-number {
+  font-size: 18px;
+  line-height: 22px;
+  color: #323232;
+}
+
+.contacts-schedule {
+  line-height: 22px;
+}
+
 .main-footer {
   font-size: 13px;
   line-height: 18px;
