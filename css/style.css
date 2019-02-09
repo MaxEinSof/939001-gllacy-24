@@ -114,6 +114,16 @@ a {
   color: #ffffff;
 }
 
+.promo-list,
+.slider-controllers {
+  list-style: none;
+}
+
+.promo-title {
+  font-size: 60px;
+  line-height: 60px;
+}
+
 .features {
   color: #323232;
   background-color: #ece1c8;
