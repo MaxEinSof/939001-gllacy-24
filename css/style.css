@@ -295,7 +295,8 @@ a {
   background-color: rgba(248, 247, 244, 0.2);
 }
 
-select[name="sorting-value"]:hover {
+select[name="sorting-value"]:hover,
+select[name="sorting-value"]:focus {
   color: #323232;
 }
 
@@ -356,4 +357,27 @@ select[name="sorting-value"]:hover {
 
 .catalog-item-price span {
   font-size: 30px;
+}
+
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-item a {
+  color: #ffffff;
+}
+
+.pagination-item-current a {
+  color: #323232;
+  background-color: #ffffff;
+}
+
+.pagination-item a:hover,
+.pagination-item a:focus {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.pagination-item a:active {
+  color: #323232;
+  background-color: #ffffff;
 }
