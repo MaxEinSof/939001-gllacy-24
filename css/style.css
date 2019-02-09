@@ -274,13 +274,58 @@ a {
 }
 
 .breadcrumbs-item a:hover,
-.breadcrumbs-item a:focus {
+.breadcrumbs-item a:focus,
+.breadcrumbs-item a:active {
   color: #ffbc9e;
 }
 
 .page-title {
   font-size: 35px;
   line-height: 41px;
+}
+
+.filters {
+  font-weight: 500;
+}
+
+.value-field {
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  background-color: rgba(248, 247, 244, 0.2);
+}
+
+select[name="sorting-value"]:hover {
+  color: #323232;
+}
+
+.price-range-toggle:hover {
+  cursor: pointer;
+}
+
+.fatness-list,
+.fillers-list {
+  list-style: none;
+}
+
+.filter-button {
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 2px solid #ffffff;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  color: #323232;
+  background-color: #ffffff;
+}
+
+.filter-button:active {
+  background-color: #ededed;
+  border: none;
+  box-shadow: inset 0 2px 1px #696969;
 }
 
 .catalog-list {

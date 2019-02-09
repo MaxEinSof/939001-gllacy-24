@@ -113,7 +113,7 @@
     
           <fieldset class="sorting-filter">
             <label class="filter-title" for="sorting-field">Сортировка:</label>
-            <select name="sorting-value" id="sorting-field">
+            <select class="value-field" name="sorting-value" id="sorting-field">
               <option value="by-popularity">по популярности</option>
               <option value="inexpensive-first">сначала недорогие</option>
               <option value="expensive-first">сначала дорогие</option>
@@ -130,7 +130,7 @@
               <output name="max-price-result">500 руб.</output>
               <input type="hidden" name="max-price" id="max-price-field" value="500">
             </div>
-            <div class="price-range">
+            <div class="price-range value-field">
               <div class="price-range-scale">
                 <div class="price-range-bar"></div>
               </div>
@@ -141,7 +141,7 @@
     
           <fieldset class="fatness-filter">
             <legend class="filter-title">Жирность:</legend>
-            <ul class="fatness-list">
+            <ul class="fatness-list value-field">
               <li class="fatness-option">
                 <label>
                   <input type="radio" name="fat-value" value="0%">
@@ -171,7 +171,7 @@
     
           <fieldset class="fillers-filter">
             <legend class="filter-title">Наполнители:</legend>
-            <ul class="fillers-list">
+            <ul class="fillers-list value-field">
               <li class="filler-option">
                 <label>
                   <input type="checkbox" name="chocolate" checked>
