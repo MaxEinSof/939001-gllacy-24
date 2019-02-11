@@ -219,7 +219,7 @@ a {
   color: #323232;
 }
 
-.contacts-schedule {
+.contacts-info .contacts-schedule {
   line-height: 22px;
 }
 
@@ -312,6 +312,7 @@ select[name="sorting-value"]:focus {
 .filter-button {
   font-size: 16px;
   line-height: 18px;
+  font-weight: 500;
   color: #ffffff;
   background-color: rgba(255, 255, 255, 0.2);
   border: 2px solid #ffffff;
@@ -370,7 +371,10 @@ select[name="sorting-value"]:focus {
   color: #ffffff;
 }
 
-.pagination-item-current a {
+.pagination-item-current a,
+.pagination-item-current a:hover,
+.pagination-item-current a:focus,
+.pagination-item-current a:active {
   color: #323232;
   background-color: #ffffff;
 }
