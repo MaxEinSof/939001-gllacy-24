@@ -176,21 +176,40 @@ a {
 }
 
 .features {
+  margin-bottom: 40px;
+  padding: 25px 20px;
   color: #323232;
   background-color: #ece1c8;
 }
 
 .features-title {
+  margin: 0;
   font-size: 24px;
   line-height: 30px;
   font-weight: 500;
 }
 
 .features-list {
-  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
+  list-style: none;
+}
+
+.features-item {
+  box-sizing: border-box;
+  width: 540px;
+  padding-left: 55px;
+}
+
+.features-item p {
+  margin-top: 20px;
+  margin-bottom: 2px;
 }
 
 .blog-announcements {
