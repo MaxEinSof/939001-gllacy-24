@@ -307,6 +307,10 @@ a {
 }
 
 .main-footer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 18px;
+  padding-bottom: 25px;
   font-size: 13px;
   line-height: 18px;
   font-weight: 400;
@@ -314,7 +318,22 @@ a {
 
 .footer-social,
 .footer-navigation {
+  display: flex;
+  margin: 0;
+  padding: 0;
   list-style: none;
+}
+
+.footer-social {
+  width: 267px;
+  margin-top: 18px;
+}
+
+.footer-navigation {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 305px;
+  margin-top: 16px;
 }
 
 .for-suppliers {
@@ -322,7 +341,19 @@ a {
 }
 
 .footer-copyright {
+  display: flex;
+  flex-direction: column;
+  width: 267px;
+  margin: 0;
   font-size: 12px;
+}
+
+.footer-copyright a {
+  align-self: center;
+}
+
+.footer-copyright span {
+  align-self: flex-end;
 }
 
 .footer-navigation-item a {
