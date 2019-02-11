@@ -262,14 +262,22 @@ a {
 }
 
 .mailing {
+  display: flex;
+  flex-direction: column;
+  padding: 35px 26px 40px 26px;
   color: #5a5a5a;
   background-color: #f8f7f4;
 }
 
 .mailing p {
+  margin: 0;
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
+}
+
+.mailing-form {
+  margin-top: auto;
 }
 
 .contacts-info {
