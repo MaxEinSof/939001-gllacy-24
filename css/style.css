@@ -185,14 +185,35 @@ a {
   display: flex;
 }
 
+.special-offer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.special-offer-raspberry,
+.special-offer-chocolate {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 18px 23px 18px;
+}
+
 .special-offer-title {
+  margin: 0;
+  margin-bottom: 15px;
   font-size: 35px;
   line-height: 41px;
 }
 
 .special-offer-description {
+  margin: 0;
+  margin-bottom: 45px;
   font-size: 18px;
   line-height: 22px;
+}
+
+.special-offer-button {
+  margin-left: auto;
 }
 
 .special-offer-raspberry {
