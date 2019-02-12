@@ -16,7 +16,9 @@ a {
 .search-form,
 .login-form,
 .cart-form,
-.modal-feedback {
+.modal-feedback,
+.promo-item:nth-child(2),
+.promo-item:last-child {
   display: none;
 }
 
@@ -147,14 +149,40 @@ a {
   color: #ffffff;
 }
 
+.promo-slider {
+  margin-bottom: 40px;
+  padding-top: 275px;
+}
+
 .promo-list,
 .slider-controllers {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
+.promo-item {
+  text-align: center;
+}
+
+.promo-item img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
 .promo-title {
+  width: 670px;
+  margin: 0 auto;
+  margin-bottom: 28px;
   font-size: 60px;
   line-height: 60px;
+}
+
+.slider-controllers {
+  display: flex;
 }
 
 .special-offer-title {
