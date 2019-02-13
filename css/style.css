@@ -34,6 +34,7 @@ a {
 }
 
 .button {
+  display: inline-block;
   font-size: 18px;
   line-height: 24px;
   color: #ffffff;
@@ -329,23 +330,43 @@ a {
   margin-top: auto;
 }
 
+.map {
+  display: block;
+  margin: 0 auto;
+}
+
+.contacts .container {
+  position: relative;
+}
+
 .contacts-info {
+  position: absolute;
+  top: -368px;
+  right: 27px;
+  width: 252px;
+  padding: 27px 25px;
   color: #323232;
   background-color: #ffffff;
 }
 
 .contacts-info p {
+  margin: 0;
   line-height: 20px;
   font-weight: 400;
 }
 
 .contacts-address {
+  margin-top: 3px;
+  margin-bottom: 17px;
   font-size: 18px;
   line-height: 24px;
   font-style: normal;
 }
 
 .contacts-phone-number {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 2px;
   font-size: 18px;
   line-height: 22px;
   color: #323232;
@@ -353,6 +374,11 @@ a {
 
 .contacts-info .contacts-schedule {
   line-height: 22px;
+}
+
+.contacts-info .button {
+  display: block;
+  margin-top: 24px;
 }
 
 .main-footer {
