@@ -151,6 +151,7 @@ a {
 }
 
 .promo-slider {
+  position: relative;
   margin-bottom: 40px;
   padding-top: 275px;
 }
@@ -168,7 +169,7 @@ a {
 
 .promo-item img {
   position: absolute;
-  top: 0;
+  top: -117px;
   left: 50%;
   transform: translateX(-50%);
   z-index: -1;
@@ -183,6 +184,8 @@ a {
 }
 
 .slider-controllers {
+  position: absolute;
+  bottom: 25px;
   display: flex;
 }
 
