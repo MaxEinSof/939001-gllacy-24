@@ -42,6 +42,8 @@ input[type="radio"].visually-hidden {
 
 .button {
   display: inline-block;
+  vertical-align: top;
+  padding: 10px 25px;
   font-size: 18px;
   line-height: 24px;
   color: #ffffff;
@@ -49,6 +51,7 @@ input[type="radio"].visually-hidden {
   background-image: linear-gradient(to bottom, #f26843, #e74a35);
   box-shadow: 0 2px 2px rgba(85, 8, 0, 0.54);
   border: none;
+  border-radius: 20px;
 }
 
 .button:hover,
@@ -287,7 +290,9 @@ input[type="radio"].visually-hidden {
 .search-item:hover .search-button,
 .search-item:focus .search-button,
 .login-button:hover,
-.login-button:focus {
+.login-button:focus,
+.login-item:hover .login-button,
+.login-item:focus .login-button {
   color: #323232;
   background-color: #f8f7f4;
 }
@@ -298,12 +303,17 @@ input[type="radio"].visually-hidden {
 .search-item:focus path,
 .login-button:hover path,
 .login-button:focus path,
+.login-item:hover path,
+.login-item:focus path,
 .login-button:hover polygon,
-.login-button:focus polygon {
+.login-button:focus polygon,
+.login-item:hover polygon,
+.login-item:focus polygon {
   fill: #323232;
 }
 
-.search-form {
+.search-form,
+.login-form {
   position: absolute;
   top: 37px;
   right: 0;
@@ -312,6 +322,7 @@ input[type="radio"].visually-hidden {
   padding: 20px 15px;
   background-color: #f8f7f4;
   border-radius: 7px;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
 }
 
 .search-form input[type="search"] {
@@ -322,8 +333,47 @@ input[type="radio"].visually-hidden {
   border-radius: 5px;
 }
 
+.login-form {
+  width: 241px;
+  padding: 20px 17px 20px 18px;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px 12px 14px 12px;
+  border: 1px solid #d3d3d2;
+  border-radius: 5px;
+}
+
+.login-form-options {
+  display: inline-block;
+  vertical-align: top;
+  width: 120px;
+  margin: 0;
+  padding-left: 16px;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.login-form-options a {
+  color: #323232;
+  text-decoration: underline;
+}
+
+.login-form-options a:hover,
+.login-form-options a:focus,
+.login-form-options a:active {
+  color: #e84d37;
+}
+
 .search-item:hover .search-form,
-.search-item:focus .search-form {
+.search-item:focus .search-form,
+.login-item:hover .login-form,
+.login-item:focus .login-form {
   display: block;
 }
 
@@ -714,6 +764,7 @@ input[type="radio"].visually-hidden {
 
 .price-filter .filter-title {
   display: inline-block;
+  vertical-align: top;
   margin-top: 0;
   font-size: 14px;
   line-height: 16px;
@@ -722,6 +773,7 @@ input[type="radio"].visually-hidden {
 
 .price-value {
   display: inline-block;
+  vertical-align: top;
 }
 
 .value-field {
