@@ -132,8 +132,7 @@ input[type="radio"].visually-hidden {
   list-style: none;
 }
 
-.main-navigation-list a,
-.user-navigation a {
+.main-navigation-list a {
   display: block;
 }
 
@@ -191,6 +190,7 @@ input[type="radio"].visually-hidden {
   list-style: none;
   background-color: #f8f7f4;
   border-radius: 5px;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
   overflow: hidden;
 }
 
@@ -248,6 +248,83 @@ input[type="radio"].visually-hidden {
   justify-content: flex-end;
   width: 267px;
   margin-left: auto;
+  padding-top: 13px;
+}
+
+.user-navigation-item {
+  position: relative;
+}
+
+.user-navigation-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.user-navigation-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 32px;
+  min-height: 32px;
+  padding-right: 17px;
+  padding-left: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+}
+
+.search-button {
+  padding: 0;
+}
+
+.login-button svg,
+.cart-button svg {
+  margin-right: 7px;
+}
+
+.search-button:hover,
+.search-button:focus,
+.search-item:hover .search-button,
+.search-item:focus .search-button,
+.login-button:hover,
+.login-button:focus {
+  color: #323232;
+  background-color: #f8f7f4;
+}
+
+.search-button:hover path,
+.search-button:focus path,
+.search-item:hover path,
+.search-item:focus path,
+.login-button:hover path,
+.login-button:focus path,
+.login-button:hover polygon,
+.login-button:focus polygon {
+  fill: #323232;
+}
+
+.search-form {
+  position: absolute;
+  top: 37px;
+  right: 0;
+  z-index: 1;
+  width: 311px;
+  padding: 20px 15px;
+  background-color: #f8f7f4;
+  border-radius: 7px;
+}
+
+.search-form input[type="search"] {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 11px 12px 13px 12px;
+  border: 1px solid #d3d3d2;
+  border-radius: 5px;
+}
+
+.search-item:hover .search-form,
+.search-item:focus .search-form {
+  display: block;
 }
 
 .phone-orders {
