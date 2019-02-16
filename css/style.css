@@ -164,7 +164,9 @@ input[type="radio"].visually-hidden {
 }
 
 .main-navigation-item > a:hover::after,
-.main-navigation-item > a:focus::after {
+.main-navigation-item > a:focus::after,
+.main-navigation-item:hover > a::after,
+.main-navigation-item:focus > a::after {
   display: none;
 }
 
@@ -177,6 +179,7 @@ input[type="radio"].visually-hidden {
   position: absolute;
   top: 37px;
   left: -7px;
+  z-index: 1;
   margin: 0;
   padding: 0;
   padding-top: 4px;
@@ -234,7 +237,8 @@ input[type="radio"].visually-hidden {
 }
 
 .main-navigation-item:hover .catalog-submenu,
-.main-navigation-item:focus .catalog-submenu {
+.main-navigation-item:focus .catalog-submenu,
+.main-navigation-item:focus-within .catalog-submenu {
   display: block;
 }
 
