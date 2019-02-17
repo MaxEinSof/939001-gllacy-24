@@ -474,6 +474,10 @@ input[type="radio"].visually-hidden {
   padding: 25px 20px;
   color: #323232;
   background-color: #ece1c8;
+  background-image: url("../img/waffle_pattern.jpg");
+  background-position: 0 0;
+  background-repeat: repeat-x;
+  border-radius: 15px;
 }
 
 .features-title {
@@ -496,14 +500,46 @@ input[type="radio"].visually-hidden {
 }
 
 .features-item {
+  position: relative;
   box-sizing: border-box;
-  width: 540px;
-  padding-left: 55px;
+  width: 541px;
+  padding-top: 21px;
+  padding-left: 56px;
+}
+
+.features-item:nth-child(2n) {
+  padding-left: 59px;
 }
 
 .features-item p {
-  margin-top: 20px;
-  margin-bottom: 2px;
+  margin: 0;
+}
+
+.features-item::before {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 0;
+  width: 49px;
+  height: 49px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.features-item.production::before {
+  background-image: url("../img/icecream_icon.svg");
+}
+
+.features-item.suppliers::before {
+  background-image: url("../img/cow_icon.svg");
+}
+
+.features-item.ingredients::before {
+  background-image: url("../img/leaf_icon.svg");
+}
+
+.features-item.delivery::before {
+  background-image: url("../img/thermometer_icon.svg");
 }
 
 .halves-wrapper {
