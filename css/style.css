@@ -557,9 +557,13 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-direction: column;
   min-height: 220px;
-  padding: 23px 20px;
+  padding: 23px 19px;
   color: #323232;
   background-color: #ffffff;
+  background-image: url("../img/article_background.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  border-radius: 15px;
 }
 
 .blog-announcements p,
@@ -569,7 +573,7 @@ input[type="radio"].visually-hidden {
 }
 
 .blog-announcements p {
-  margin-bottom: 5px;
+  margin-bottom: 4px;
   font-size: 16px;
   line-height: 22px;
   font-weight: 500;
@@ -583,6 +587,7 @@ input[type="radio"].visually-hidden {
 
 .article-title a {
   color: #323232;
+  text-decoration: underline;
 }
 
 .article-title a:hover,
