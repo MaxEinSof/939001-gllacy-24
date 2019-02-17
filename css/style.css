@@ -599,9 +599,13 @@ input[type="radio"].visually-hidden {
 .mailing {
   display: flex;
   flex-direction: column;
-  padding: 35px 26px 40px 26px;
+  padding: 29px 20px 34px 20px;
   color: #5a5a5a;
   background-color: #f8f7f4;
+  border-width: 6px;
+  border-style: solid;
+  border-image: repeating-linear-gradient(-45deg, #f8f7f4, #f8f7f4 5px, #92cdff 5px, #92cdff 12px, #f8f7f4 12px, #f8f7f4 19px, #fe9e90 19px, #fe9e90 26px, #f8f7f4 26px, #f8f7f4 28px) 10;
+  border-radius: 15px;
 }
 
 .mailing p {
@@ -612,7 +616,26 @@ input[type="radio"].visually-hidden {
 }
 
 .mailing-form {
+  display: flex;
+  justify-content: space-between;
   margin-top: auto;
+}
+
+.mailing-form input[type="email"] {
+  box-sizing: border-box;
+  width: 368px;
+  margin-right: 10px;
+  padding: 9px 13px;
+  font-size: 16px;
+  line-height: 24px;
+  border: 1px solid rgba(178, 178, 178, 0.52);
+  border-radius: 5px;
+}
+
+.mailing-form .button {
+  padding: 9px 19px 11px 18px;
+  font-weight: 700;
+  border-radius: 22px;
 }
 
 .map {
