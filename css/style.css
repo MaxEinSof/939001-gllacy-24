@@ -748,13 +748,24 @@ input[type="radio"].visually-hidden {
 
 .footer-navigation {
   flex-wrap: wrap;
-  justify-content: space-between;
-  width: 305px;
+  width: 350px;
   margin-top: 16px;
 }
 
 .for-suppliers {
+  position: relative;
   font-weight: 700;
+}
+
+.for-suppliers::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 2px;
+  display: block;
+  width: 15px;
+  height: 13px;
+  background: url("../img/heart.svg") no-repeat;
 }
 
 .footer-copyright {
@@ -773,8 +784,21 @@ input[type="radio"].visually-hidden {
   align-self: flex-end;
 }
 
-.footer-navigation-item a {
+.footer-navigation-item {
+  width: 118px;
+  padding-left: 24px;
+}
+
+.footer-navigation-item:last-child {
+  width: 163px;
+}
+
+.footer-navigation-item a,
+.footer-copyright a:last-child {
+  display: inline-block;
+  vertical-align: top;
   color: #ffffff;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
 }
 
 .footer-copyright,
@@ -789,6 +813,7 @@ input[type="radio"].visually-hidden {
 .footer-copyright a:last-child:focus,
 .footer-copyright a:last-child:active {
   color: #ffbc9e;
+  box-shadow: 0 1px 0 rgba(255, 188, 158, 0.3);
 }
 
 .current-page > a {
