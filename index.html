@@ -8,7 +8,7 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-
+    <div class="modal-overlay"></div>
     <header class="main-header container">
       <div class="main-header-row">
         <nav class="main-navigation">
@@ -42,7 +42,7 @@
             </a>
             <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
               <label class="visually-hidden" for="search-field">Строка поиска</label>
-              <input type="search" name="search-query" id="search-field" placeholder="Что ищем?">
+              <input class="entry-field" type="search" name="search-query" id="search-field" placeholder="Что ищем?">
               <button class="visually-hidden" type="submit">Найти</button>
             </form>
           </div>
@@ -56,9 +56,9 @@
             </a>
             <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
               <label class="visually-hidden" for="email-field">Поле ввода электронной почты</label>
-              <input type="email" name="email" id="email-field" placeholder="Электронная почта" required>
+              <input class="entry-field" type="email" name="email" id="email-field" placeholder="Электронная почта" required>
               <label class="visually-hidden" for="password-field">Поле ввода пароля</label>
-              <input type="password" name="password" id="password-field" placeholder="Пароль" required>
+              <input class="entry-field" type="password" name="password" id="password-field" placeholder="Пароль" required>
               <button class="button" type="submit">Войти</button>
               <p class="login-form-options">
                 <a href="#">Забыли пароль?</a>
@@ -222,7 +222,7 @@
           <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
           <form class="mailing-form" action="https://echo.htmlacademy.ru" method="post">
             <label class="visually-hidden" for="mailing-email-field">Поле ввода электронной почты</label>
-            <input type="email" name="email" id="mailing-email-field" placeholder="Электронная почта" required>
+            <input class="entry-field" type="email" name="email" id="mailing-email-field" placeholder="Электронная почта" required>
             <button class="button" type="submit">Отправить</button>
           </form>
         </section>
@@ -248,15 +248,15 @@
         <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
           <p class="modal-addresser">
             <label class="visually-hidden" for="modal-name-field">Поле ввода имени</label>
-            <input type="text" name="name" id="modal-name-field" placeholder="Как вас зовут?">
+            <input class="entry-field" type="text" name="name" id="modal-name-field" placeholder="Как вас зовут?">
             <label class="visually-hidden" for="modal-email-field">Поле ввода электронной почты</label>
-            <input type="email" name="email" id="modal-email-field" placeholder="Ваша почта для ответа?" required>
+            <input class="entry-field" type="email" name="email" id="modal-email-field" placeholder="Ваша почта для ответа?" required>
           </p>
           <label class="visually-hidden" for="modal-message-field">Поле ввода сообщения</label>
-          <textarea name="message" id="modal-message-field" placeholder="Напишите что-нибудь..." required></textarea>
+          <textarea class="entry-field" name="message" id="modal-message-field" placeholder="Напишите что-нибудь..." required></textarea>
           <button class="button" type="submit">Отправить</button>
         </form>
-        <button class="modal-close" type="button">Закрыть</button>
+        <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
       </section>
     </main>
 
