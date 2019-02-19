@@ -8,7 +8,6 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <div class="modal-overlay"></div>
     <header class="main-header container">
       <div class="main-header-row">
         <nav class="main-navigation">
@@ -253,11 +252,12 @@
             <input class="entry-field" type="email" name="email" id="modal-email-field" placeholder="Ваша почта для ответа?" required>
           </p>
           <label class="visually-hidden" for="modal-message-field">Поле ввода сообщения</label>
-          <textarea class="entry-field" name="message" id="modal-message-field" placeholder="Напишите что-нибудь..." required></textarea>
+          <textarea class="entry-field" rows="6" name="message" id="modal-message-field" placeholder="Напишите что-нибудь..." required></textarea>
           <button class="button" type="submit">Отправить</button>
         </form>
         <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
       </section>
+      <div class="modal-overlay"></div>
     </main>
 
     <footer class="main-footer container">

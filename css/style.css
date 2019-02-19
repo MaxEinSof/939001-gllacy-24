@@ -636,10 +636,13 @@ textarea.entry-field:focus {
   padding: 29px 20px 34px 20px;
   color: #5a5a5a;
   background-color: #f8f7f4;
-  border-width: 6px;
-  border-style: solid;
-  border-image: repeating-linear-gradient(-45deg, #f8f7f4, #f8f7f4 5px, #92cdff 5px, #92cdff 12px, #f8f7f4 12px, #f8f7f4 19px, #fe9e90 19px, #fe9e90 26px, #f8f7f4 26px, #f8f7f4 28px) 10;
+  border: 5px solid transparent;
   border-radius: 15px;
+  background-image:
+    linear-gradient(#f8f7f4, #f8f7f4),
+    repeating-linear-gradient(-45deg, #f8f7f4, #f8f7f4 5px, #92cdff 5px, #92cdff 12px, #f8f7f4 12px, #f8f7f4 19px, #fe9e90 19px, #fe9e90 26px, #f8f7f4 26px, #f8f7f4 28px);
+  background-origin: padding-box, border-box;
+  background-clip: padding-box, border-box;
 }
 
 .mailing p {
@@ -758,6 +761,7 @@ textarea.entry-field:focus {
   height: 155px;
   margin-bottom: 25px;
   padding-top: 5px;
+  padding-bottom: 5px;
   resize: none;
 }
 
@@ -782,6 +786,8 @@ textarea.entry-field:focus {
 .modal-overlay {
   position: fixed;
   z-index: 99;
+  top: 0;
+  left: 0;
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.3);
