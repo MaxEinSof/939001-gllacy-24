@@ -907,27 +907,22 @@ textarea.entry-field:focus {
   width: 163px;
 }
 
-.footer-navigation-item a,
-.footer-copyright a:last-child {
+.white-links {
   display: inline-block;
   vertical-align: top;
   color: #ffffff;
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
 }
 
-.footer-copyright,
-.footer-copyright a:last-child {
-  color: #fefefe;
-}
-
-.footer-navigation-item a:hover,
-.footer-navigation-item a:focus,
-.footer-navigation-item a:active,
-.footer-copyright a:last-child:hover,
-.footer-copyright a:last-child:focus,
-.footer-copyright a:last-child:active {
+.white-links:hover,
+.white-links:focus,
+.white-links:active {
   color: #ffbc9e;
   box-shadow: 0 1px 0 rgba(255, 188, 158, 0.3);
+}
+
+.footer-copyright {
+  color: #fefefe;
 }
 
 .current-page > a,
@@ -1049,25 +1044,25 @@ textarea.entry-field:focus {
   color: #fefefe;
 }
 
-
-
 .breadcrumbs {
   display: flex;
   margin: 0;
   margin-top: auto;
   padding: 0;
+  padding-bottom: 2px;
   font-weight: 400;
   list-style: none;
 }
 
-.breadcrumbs-item a {
-  color: #ffffff;
+.breadcrumbs-item {
+  position: relative;
+  margin-right: 21px;
 }
 
-.breadcrumbs-item a:hover,
-.breadcrumbs-item a:focus,
-.breadcrumbs-item a:active {
-  color: #ffbc9e;
+.breadcrumbs-item:not(:last-child)::after {
+  content: "»";
+  position: absolute;
+  right: -14px;
 }
 
 .page-title {
