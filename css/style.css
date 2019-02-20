@@ -1227,12 +1227,18 @@ select[name="sorting-value"]:focus {
   display: none;
 }
 
-.catalog-item:hover {
+.catalog-item:hover,
+.catalog-item:focus,
+.catalog-item:focus-within {
   z-index: 1;
 }
 
 .catalog-item:hover::before,
-.catalog-item:hover .quick-review-button {
+.catalog-item:focus::before,
+.catalog-item:focus-within::before,
+.catalog-item:hover .quick-review-button,
+.catalog-item:focus .quick-review-button,
+.catalog-item:focus-within .quick-review-button {
   display: block;
 }
 
