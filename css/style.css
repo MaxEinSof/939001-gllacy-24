@@ -314,8 +314,13 @@ input[type="radio"].visually-hidden {
   fill: #323232;
 }
 
+.cart-button:hover {
+  cursor: default;
+}
+
 .search-form,
-.login-form {
+.login-form,
+.cart-form {
   position: absolute;
   top: 37px;
   right: 0;
@@ -404,6 +409,11 @@ textarea.entry-field:focus {
 .login-item:hover .login-form,
 .login-item:focus .login-form {
   display: block;
+}
+
+.cart-filled:hover .cart-form,
+.cart-filled:focus .cart-form {
+  display: flex;
 }
 
 .phone-orders {
@@ -920,9 +930,126 @@ textarea.entry-field:focus {
   box-shadow: 0 1px 0 rgba(255, 188, 158, 0.3);
 }
 
-.current-page > a {
+.current-page > a,
+.current-subpage > a,
+.current-subpage > a:hover,
+.current-subpage > a:focus {
+  color: #ffffff;
   background-color: #d07058;
 }
+
+.current-page > a::after {
+  display: none;
+}
+
+.cart-filled .cart-button {
+  color: #323232;
+  background-color: #f8f7f4;
+  cursor: pointer;
+}
+
+.cart-filled path,
+.cart-filled circle {
+  fill: #343434;
+}
+
+.cart-filled polygon {
+  fill: #e84d37;
+}
+
+.cart-form {
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 540px;
+  padding: 10px 15px 20px 14px;
+}
+
+.cart-product-table {
+  font-size: 13px;
+  font-weight: 400;
+  color: #323232;
+  border-collapse: collapse;
+}
+
+.cart-product-table a {
+  color: #323232;
+}
+
+.cart-item-delete {
+  width: 17px;
+  padding-top: 19px;
+  vertical-align: top;
+}
+
+.cart-item-delete button {
+  width: 11px;
+  height: 11px;
+  border: none;
+  background: url("../img/cross-small.svg") no-repeat;
+  cursor: pointer;
+}
+
+.cart-item-thumbnail {
+  width: 51px;
+  padding-top: 10px;
+  text-align: center;
+  vertical-align: top;
+}
+
+.cart-item-title {
+  box-sizing: border-box;
+  width: 244px;
+  padding: 18px 6px 18px 3px;
+}
+
+.weight-price {
+  width: 114px;
+  padding-top: 18px;
+  text-align: center;
+  vertical-align: top;
+}
+
+.weight-price span {
+  color: #999999;
+}
+
+.cart-item-price {
+  width: 85px;
+  padding-top: 18px;
+  text-align: center;
+  vertical-align: top;
+}
+
+.cart-total {
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 700;
+  text-align: right;
+  border-top: 1px solid #cacac7;
+}
+
+.cart-total td {
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.total-text {
+  margin-right: -27px;
+}
+
+.total-price {
+  margin-right: -3px;
+}
+
+.cart-form-button {
+  align-self: flex-end;
+  padding-right: 14px;
+  padding-left: 14px;
+  font-weight: 700;
+  color: #fefefe;
+}
+
+
 
 .breadcrumbs {
   display: flex;
