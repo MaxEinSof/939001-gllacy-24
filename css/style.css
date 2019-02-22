@@ -536,33 +536,40 @@ textarea.entry-field:focus {
 .special-offer-chocolate {
   display: flex;
   flex-direction: column;
-  padding: 15px 18px 23px 18px;
+  padding: 16px 21px 23px 18px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  border-radius: 15px;
 }
 
 .special-offer-title {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 16px;
   font-size: 35px;
   line-height: 41px;
 }
 
 .special-offer-description {
   margin: 0;
-  margin-bottom: 45px;
+  margin-bottom: 44px;
   font-size: 18px;
   line-height: 22px;
 }
 
 .special-offer-button {
   margin-left: auto;
+  padding: 10px 24px 12px 21px;
+  border-radius: 25px;
 }
 
 .special-offer-raspberry {
   background-color: #b51933;
+  background-image: url("../img/raspberry_background.jpg");
 }
 
 .special-offer-chocolate {
   background-color: #563729;
+  background-image: url("../img/chocolate_background.jpg");
 }
 
 .features {
