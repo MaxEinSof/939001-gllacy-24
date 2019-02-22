@@ -76,12 +76,16 @@ input[type="radio"].visually-hidden {
 }
 
 .button-big {
+  display: inline-block;
+  vertical-align: top;
+  padding: 8px 41px 11px 41px;
   font-size: 32px;
   line-height: 44px;
   color: #ffffff;
   text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
   background-color: #ed5a3d;
   background-image: linear-gradient(to bottom, #f26843, #e74a35);
+  border-radius: 35px;
   box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
 }
 
@@ -483,15 +487,43 @@ textarea.entry-field:focus {
 .promo-title {
   width: 670px;
   margin: 0 auto;
-  margin-bottom: 28px;
+  margin-bottom: 31px;
   font-size: 60px;
   line-height: 60px;
 }
 
 .slider-controllers {
   position: absolute;
-  bottom: 25px;
+  bottom: 22px;
   display: flex;
+}
+
+.switch-item:not(:last-child) {
+  margin-right: 9px;
+}
+
+.switch-button {
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.switch-button:hover,
+.switch-button:focus {
+  background-color: rgba(248, 247, 244, 0.4);
+}
+
+.switch-button:active {
+  background-color: #ffffff;
+}
+
+.switch-button-current,
+.switch-button-current:hover,
+.switch-button-current:focus {
+  background-color: #ffffff;
 }
 
 .special-offer {
@@ -1271,7 +1303,7 @@ select[name="sorting-value"]:focus {
   z-index: -1;
   align-self: center;
   width: 293px;
-  height: 405px;
+  height: calc(100% + 82px);
   background-color: rgba(248, 247, 244, 0.2);
   border-radius: 5px;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
