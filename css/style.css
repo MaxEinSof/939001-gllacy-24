@@ -29,6 +29,7 @@ img {
 }
 
 .visually-hidden:not(:focus):not(:active),
+.search-form button.visually-hidden,
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
   position: absolute;
@@ -335,8 +336,12 @@ input[type="radio"].visually-hidden {
   width: 311px;
   padding: 20px 15px;
   background-color: #f8f7f4;
-  border-radius: 7px;
+  border-radius: 6px;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+}
+
+.cart-form {
+  border-radius: 5px;
 }
 
 .search-form input {
@@ -359,6 +364,7 @@ input[type="radio"].visually-hidden {
 .entry-field::placeholder {
   font-weight: 400;
   color: #999999;
+  opacity: 1;
 }
 
 .entry-field:hover {
@@ -370,6 +376,11 @@ input[type="radio"].visually-hidden {
   outline: none;
   padding-left: 14px;
   border: 2px solid rgba(46, 136, 228, 0.52);
+}
+
+.search-form .entry-field::placeholder,
+.login-form .entry-field::placeholder {
+  font-size: 14px;
 }
 
 textarea.entry-field:hover,
@@ -413,8 +424,10 @@ textarea.entry-field:focus {
 
 .search-item:hover .search-form,
 .search-item:focus .search-form,
+.search-item:focus-within .search-form,
 .login-item:hover .login-form,
-.login-item:focus .login-form {
+.login-item:focus .login-form,
+.login-item:focus-within .login-form {
   display: block;
 }
 
@@ -775,11 +788,12 @@ textarea.entry-field:focus {
 
 .modal-form textarea {
   width: 100%;
-  height: 155px;
+  min-height: 155px;
+  max-height: 50vh;
   margin-bottom: 25px;
   padding-top: 5px;
   padding-bottom: 5px;
-  resize: none;
+  resize: vertical;
 }
 
 .modal-form .button {
@@ -984,6 +998,7 @@ textarea.entry-field:focus {
 .cart-item-delete button {
   width: 11px;
   height: 11px;
+  margin-left: 7px;
   border: none;
   background: url("../img/cross-small.svg") no-repeat;
   cursor: pointer;
@@ -1264,7 +1279,7 @@ select[name="sorting-value"]:focus {
 
 .quick-review-button {
   position: absolute;
-  top: 333px;
+  bottom: -53px;
   align-self: center;
   padding-right: 16px;
   padding-left: 16px;
