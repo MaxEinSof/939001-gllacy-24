@@ -436,7 +436,8 @@ textarea.entry-field:focus {
 }
 
 .cart-filled:hover .cart-form,
-.cart-filled:focus .cart-form {
+.cart-filled:focus .cart-form,
+.cart-filled:focus-within .cart-form {
   display: flex;
 }
 
@@ -1373,6 +1374,10 @@ select[name="sorting-value"]:focus + .select-arrow polyline {
   box-shadow: inset 0 2px 1px #696969;
 }
 
+.catalog {
+  margin-bottom: 42px;
+}
+
 .catalog-list {
   display: flex;
   flex-wrap: wrap;
@@ -1481,15 +1486,13 @@ select[name="sorting-value"]:focus + .select-arrow polyline {
 }
 
 .pagination-item a {
+  display: block;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
   color: #ffffff;
-}
-
-.pagination-item-current a,
-.pagination-item-current a:hover,
-.pagination-item-current a:focus,
-.pagination-item-current a:active {
-  color: #323232;
-  background-color: #ffffff;
+  border-radius: 50%;
 }
 
 .pagination-item a:hover,
@@ -1500,4 +1503,68 @@ select[name="sorting-value"]:focus + .select-arrow polyline {
 .pagination-item a:active {
   color: #323232;
   background-color: #ffffff;
+}
+
+.pagination-item-current a,
+.pagination-item-current a:hover,
+.pagination-item-current a:focus,
+.pagination-item-current a:active {
+  color: #323232;
+  background-color: #ffffff;
+}
+
+.pagination-item:not(:last-child) {
+  margin-right: 4px;
+}
+
+.pagination-item:first-child {
+  position: relative;
+  padding-left: 25px;
+}
+
+.pagination-item:last-child {
+  position: relative;
+  padding-right: 25px;
+}
+
+.pagination-item:first-child::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 0;
+  width: 9px;
+  height: 14px;
+  background: url("../img/pagination_arrow.svg") 0 0 no-repeat;
+  transform: rotate(180deg);
+}
+
+.pagination-item:last-child::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  right: 0;
+  width: 9px;
+  height: 14px;
+  background: url("../img/pagination_arrow.svg") 0 0 no-repeat;
+}
+
+.pagination-item-current::before,
+.pagination-item-current::after {
+  opacity: 0.2;
+}
+
+.inner-main {
+  position: relative;
+  padding-bottom: 31px;
+}
+
+.inner-main::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 54px);
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.3);
 }
