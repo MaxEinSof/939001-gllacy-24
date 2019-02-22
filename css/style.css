@@ -1324,6 +1324,16 @@ select[name="sorting-value"]:focus {
   padding-left: 16px;
 }
 
+.bestsellers .catalog-item::after {
+  content: "";
+  position: absolute;
+  width: 61px;
+  height: 61px;
+  background-image: url("../img/hit_tag.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
 .pagination-list {
   display: flex;
   justify-content: flex-end;
