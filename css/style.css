@@ -1375,7 +1375,7 @@ select[name="sorting-value"]:focus + .select-arrow polyline {
 }
 
 .catalog {
-  margin-bottom: 42px;
+  margin-bottom: 44px;
 }
 
 .catalog-list {
@@ -1392,7 +1392,7 @@ select[name="sorting-value"]:focus + .select-arrow polyline {
   display: flex;
   flex-direction: column;
   width: 267px;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
 }
 
 .catalog-item-title {
