@@ -144,6 +144,9 @@
               <option value="expensive-first">сначала дорогие</option>
               <option value="by-fatness">по жирности</option>
             </select>
+            <svg class="select-arrow" xmlns="http://www.w3.org/2000/svg" width="11px" height="10px" viewBox="0 0 11 10">
+              <polyline fill="#ffffff" points="5.5,10 0,0 11,0 "/>
+            </svg>
           </fieldset>
     
           <fieldset class="price-filter">
@@ -168,28 +171,20 @@
             <legend class="filter-title">Жирность:</legend>
             <ul class="fatness-list value-field">
               <li class="fatness-option">
-                <label>
-                  <input class="visually-hidden" type="radio" name="fat-value" value="0%">
-                  0%
-                </label>
+                <input class="visually-hidden fatness-option-input" type="radio" name="fat-value" id="fat-value-0" value="0%">
+                <label for="fat-value-0">0%</label>
               </li>
               <li class="fatness-option">
-                <label>
-                  <input class="visually-hidden" type="radio" name="fat-value" value="до 10%" checked>
-                  до 10%
-                </label>
+                <input class="visually-hidden fatness-option-input" type="radio" name="fat-value" id="fat-value-under-10" value="до 10%" checked>
+                <label for="fat-value-under-10">до 10%</label>
               </li>
               <li class="fatness-option">
-                <label>
-                  <input class="visually-hidden" type="radio" name="fat-value" value="до 30%">
-                  до 30%
-                </label>
+                <input class="visually-hidden fatness-option-input" type="radio" name="fat-value" id="fat-value-under-30" value="до 30%">
+                <label for="fat-value-under-30">до 30%</label>
               </li>
               <li class="fatness-option">
-                <label>
-                  <input class="visually-hidden" type="radio" name="fat-value" value="выше 30%">
-                  выше 30%
-                </label>
+                <input class="visually-hidden fatness-option-input" type="radio" name="fat-value" id="fat-value-above-30" value="выше 30%">
+                <label for="fat-value-above-30">выше 30%</label>
               </li>
             </ul>
           </fieldset>
@@ -198,34 +193,24 @@
             <legend class="filter-title">Наполнители:</legend>
             <ul class="fillers-list value-field">
               <li class="filler-option">
-                <label>
-                  <input class="visually-hidden" type="checkbox" name="chocolate" checked>
-                  шоколадные
-                </label>
+                <input class="visually-hidden filler-option-input" type="checkbox" name="chocolate" id="chocolate-checkbox" checked>
+                <label for="chocolate-checkbox">шоколадные</label>
               </li>
               <li class="filler-option">
-                <label>
-                  <input class="visually-hidden" type="checkbox" name="sugar-powders" checked>
-                  сахарные присыпки
-                </label>
+                <input class="visually-hidden filler-option-input" type="checkbox" name="sugar-powders" id="sugar-powders-checkbox" checked>
+                <label for="sugar-powders-checkbox">сахарные присыпки</label>
               </li>
               <li class="filler-option">
-                <label>
-                  <input class="visually-hidden" type="checkbox" name="fruits">
-                  фрукты
-                </label>
+                <input class="visually-hidden filler-option-input" type="checkbox" name="fruits" id="fruits-checkbox">
+                <label for="fruits-checkbox">фрукты</label>
               </li>
               <li class="filler-option">
-                <label>
-                  <input class="visually-hidden" type="checkbox" name="syrups">
-                  сиропы
-                </label>
+                <input class="visually-hidden filler-option-input" type="checkbox" name="syrups" id="syrups-checkbox">
+                <label for="syrups-checkbox">сиропы</label>
               </li>
               <li class="filler-option">
-                <label>
-                  <input class="visually-hidden" type="checkbox" name="jams">
-                  джемы
-                </label>
+                <input class="visually-hidden filler-option-input" type="checkbox" name="jams" id="jams-checkbox">
+                <label for="jams-checkbox">джемы</label>
               </li>
             </ul>
           </fieldset>

@@ -1193,10 +1193,30 @@ textarea.entry-field:focus {
   line-height: 18px;
   color: #ffffff;
   background-color: rgba(248, 247, 244, 0.2);
+  border-radius: 25px;
+}
+
+.sorting-filter {
+  position: relative;
 }
 
 .sorting-filter .value-field {
-  padding: 6px 15px 8px 10px;
+  padding: 8px 34px 10px 15px;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.sorting-filter .value-field::-ms-expand {
+  display: none;
+}
+
+.select-arrow {
+  position: absolute;
+  right: 15px;
+  bottom: 14px;
+  pointer-events: none;
 }
 
 select[name="sorting-value"]:hover,
@@ -1204,18 +1224,128 @@ select[name="sorting-value"]:focus {
   color: #323232;
 }
 
+select[name="sorting-value"]:hover + .select-arrow polyline,
+select[name="sorting-value"]:focus + .select-arrow polyline {
+  fill: #323232;
+}
+
+.price-range {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 36px;
+  padding: 0 21px;
+}
+
+.price-range-scale {
+  width: 100%;
+  height: 4px;
+  background-color: rgba(248, 247, 244, 0.5);
+}
+
+.price-range-bar {
+  width: 106px;
+  height: 100%;
+  margin-left: 16px;
+  background-color: #f8f7f4;
+}
+
+.price-range-toggle {
+  position: absolute;
+  top: 8px;
+  width: 20px;
+  height: 23px;
+  border: none;
+  background: url("../img/range_toggle.svg") 0 0 no-repeat;
+}
+
+.toggle-min {
+  left: 34px; 
+}
+
+.toggle-max {
+  right: 66px;
+}
+
 .price-range-toggle:hover {
   cursor: pointer;
 }
 
+.fatness-list {
+  padding-right: 17px;
+}
+
 .fatness-option,
 .filler-option {
+  position: relative;
   padding-left: 32px;
 }
 
-.fatness-option:not(:last-child),
+.fatness-option:not(:last-child) {
+  margin-right: 17px;
+}
+
 .filler-option:not(:last-child) {
-  margin-right: 20px;
+  margin-right: 21px;
+}
+
+.fatness-option label,
+.filler-option label {
+  cursor: pointer;
+}
+
+.fatness-option label::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  opacity: 0.8;
+}
+
+.fatness-option-input:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 7px;
+  width: 8px;
+  height: 8px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  opacity: 0.8;
+}
+
+.filler-option label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 20px;
+  background: url("../img/checkbox_off.svg") 0 0 no-repeat;
+  opacity: 0.8;
+}
+
+.filler-option-input:checked + label::before {
+  background-image: url("../img/checkbox_on.svg");
+}
+
+.fatness-option-input:hover + label::before,
+.fatness-option-input:focus + label::before,
+.fatness-option-input:hover + label::after,
+.fatness-option-input:focus + label::after,
+.filler-option-input:hover + label::before,
+.filler-option-input:focus + label::before {
+  opacity: 1;
+}
+
+.fatness-option-input:disabled + label::before,
+.fatness-option-input:disabled + label::after,
+.filler-option-input:disabled + label::before {
+  opacity: 0.4;
 }
 
 .filter-button {
@@ -1227,6 +1357,7 @@ select[name="sorting-value"]:focus {
   color: #ffffff;
   background-color: rgba(255, 255, 255, 0.2);
   border: 2px solid #ffffff;
+  border-radius: 25px;
 }
 
 .filter-button:hover,
@@ -1236,6 +1367,7 @@ select[name="sorting-value"]:focus {
 }
 
 .filter-button:active {
+  padding: 8px 29px 10px 29px;
   background-color: #ededed;
   border: none;
   box-shadow: inset 0 2px 1px #696969;
