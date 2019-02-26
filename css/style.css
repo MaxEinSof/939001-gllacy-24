@@ -518,9 +518,12 @@ textarea.entry-field:focus {
 .promo-item img {
   position: absolute;
   top: -117px;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
+  right: 0;
   z-index: -1;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .promo-title {
@@ -779,6 +782,7 @@ textarea.entry-field:focus {
 
 .map {
   display: block;
+  min-width: 1200px;
   margin: 0 auto;
 }
 
@@ -801,6 +805,10 @@ textarea.entry-field:focus {
   margin: 0;
   line-height: 20px;
   font-weight: 400;
+}
+
+.address-text {
+  width: 150px;
 }
 
 .contacts-address {
@@ -1620,10 +1628,12 @@ select[name="sorting-value"]:focus + .select-arrow polyline {
 .inner-main::after {
   content: "";
   position: absolute;
+  left: 0;
+  right: 0;
   bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
   width: calc(100% - 54px);
   height: 1px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: rgba(255, 255, 255, 0.3);
 }
