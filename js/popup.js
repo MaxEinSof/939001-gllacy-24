@@ -4,7 +4,7 @@ var overlay = document.querySelector(".modal-overlay");
 var close = popup.querySelector(".modal-close");
 
 var form = popup.querySelector(".modal-form");
-var name = popup.querySelector("#modal-name-field");
+var nameField = popup.querySelector("#modal-name-field");
 var email = popup.querySelector("#modal-email-field");
 var message = popup.querySelector("#modal-message-field");
 
@@ -30,23 +30,23 @@ button.addEventListener("click", function (evt) {
   popup.classList.add("modal-animate");
   overlay.classList.add("modal-show");
   if (storageName) {
-    name.value = storageName;
+    nameField.value = storageName;
     email.focus();
   } else {
-    name.focus();
+    nameField.focus();
   }
   if (storageEmail) {
     email.value = storageEmail;
     if (storageName) {
       message.focus();
     } else {
-      name.focus();
+      nameField.focus();
     }
   } else {
     if (storageName) {
       email.focus();
     } else {
-      name.focus();
+      nameField.focus();
     }
   }
 });
@@ -67,14 +67,14 @@ overlay.addEventListener("click", function (evt) {
 });
 
 form.addEventListener("submit", function (evt) {
-  if (!name.value || !email.value || !message.value) {
+  if (!nameField.value || !email.value || !message.value) {
     evt.preventDefault();
     popup.classList.remove("modal-error");
     popup.offsetWidth = popup.offsetWidth;
     popup.classList.add("modal-error");
   } else {
     if (storageSupport) {
-      localStorage.setItem("name", name.value);
+      localStorage.setItem("name", nameField.value);
       localStorage.setItem("email", email.value);
     }
   }
