@@ -795,10 +795,12 @@ textarea.entry-field:focus {
   top: -368px;
   right: 27px;
   width: 252px;
+  height: 247px;
   padding: 27px 25px 30px 25px;
   color: #323232;
   background-color: #ffffff;
   border-radius: 15px;
+  overflow-y: auto;
 }
 
 .contacts-info p {
