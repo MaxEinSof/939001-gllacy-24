@@ -29,15 +29,16 @@ button.addEventListener("click", function (evt) {
   popup.classList.add("modal-show");
   popup.classList.add("modal-animate");
   overlay.classList.add("modal-show");
+  if (storageName) {
+    nameField.value = storageName;
+    email.focus();
+  } else {
+    nameField.focus();
+  }
   if (storageName && storageEmail) {
     nameField.value = storageName;
     email.value = storageEmail;
     message.focus();
-  }
-  if (storageName) {
-    email.focus();
-  } else {
-    nameField.focus();
   }
 });
 

@@ -800,7 +800,6 @@ textarea.entry-field:focus {
   color: #323232;
   background-color: #ffffff;
   border-radius: 15px;
-  overflow-y: auto;
 }
 
 .contacts-info p {
