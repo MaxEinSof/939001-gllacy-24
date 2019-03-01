@@ -824,6 +824,7 @@ textarea.entry-field:focus {
   top: 0;
   z-index: 1;
   width: 100%;
+  border: none;
 }
 
 .contacts .container {
